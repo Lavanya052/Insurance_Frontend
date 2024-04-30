@@ -1,0 +1,51 @@
+.double-shade-header {
+  background: linear-gradient(125deg,#1740b9, #34c4c4);
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  height: 90px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 80px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+  padding: 0px 20px;
+  font-size: 100px;
+  font-weight: bold;
+  width: 120px; 
+  text-align: center; 
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block; 
+  width: 100%; 
+  padding: 15px 0;
+}
+
+.navbar ul li a:hover {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: aliceblue;
+  color: black;
+}

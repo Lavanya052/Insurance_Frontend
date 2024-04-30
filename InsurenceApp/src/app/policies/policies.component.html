@@ -1,0 +1,27 @@
+<div *ngIf="policies">
+  <h2 style="text-align: center; background-color: #f0f0f0; padding: 10px; margin: 30px 0;">Policies</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Policy ID</th>
+        <th>Policy Number</th>
+        <th>Policy Type</th>
+        <th>Insurance Company</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Premium Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let policy of policies">
+        <td>{{ policy.policyId }}</td>
+        <td>{{ policy.policyNumber }}</td>
+        <td>{{ policy.policyType }}</td>
+        <td>{{ policy.insuranceCompany }}</td>
+        <td>{{ formatDate(policy.startDate) }}</td>
+        <td>{{ formatDate(policy.endDate) }}</td>
+        <td>{{ formatCurrency(policy.premiumAmount) }}</td>
+      </tr>      
+    </tbody>
+  </table>
+</div>

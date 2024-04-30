@@ -1,0 +1,25 @@
+.container {
+    text-align: center; /* Center text horizontally */
+    height: 70px; /* Optional: Set height to center vertically in viewport */
+  }
+  
+  .container h1 {
+    margin-top: 50px;
+    color: rgb(26, 108, 37);
+}
+  .row{
+    margin: 5rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25px; 
+    margin-left: 25px;
+  }
+
+  .col{
+
+        flex: 0 0 50%; 
+        max-width: 50%;
+        padding-right: 15px; 
+        padding-left: 15px;
+
+  }

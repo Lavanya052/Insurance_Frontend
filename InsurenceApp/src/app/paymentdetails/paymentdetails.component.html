@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Payment Detail Register</h1>
+</div>
+
+<div class="row">
+  <div class="col">
+    <app-paymentdetailsform/>
+  </div>
+  <div class="col">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Card Owner Name</th>
+          <th>Card Number</th>
+          <th>Expiration Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pd of service.list" (click)="populateForm(pd)">
+          <td>{{ pd.cardOwnerName }}</td>
+          <td>{{ pd.cardNumber }}</td>
+          <td>{{ pd.expirationDate }}</td>
+          <td>
+            <i class="fa-solid fa-trash-can fa-lg mouse-hover" (click)="onDelete(pd.paymentDetailId)"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

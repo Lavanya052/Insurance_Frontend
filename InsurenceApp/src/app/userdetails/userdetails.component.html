@@ -1,0 +1,75 @@
+<header>
+  <div class="header-container">
+    <div *ngIf="userDetails.length > 0" class="flex-container">
+      <img src="/assets/clogo.png" alt="company logo" class="logo">
+      <ul>
+        <li *ngFor="let userDetail of userDetails">
+          <h4> Welcome,{{ userDetail.firstName }} {{ userDetail.lastName }}</h4>
+          <p style="display: inline;">id: {{ userDetail.userId }}, {{ userDetail.email }}</p>,
+          <p style="font-weight: bolder; display: inline;"> iLink Systems Ltd</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="policy-details">
+    <div class="user-details-container">
+      <div *ngIf="userPolicies.length > 0">
+        <h2>Group Mediciaim Policy</h2>
+        <div *ngFor="let policy of userPolicies">
+          <div class="policy-item">
+            <p><strong>Insurancer: </strong> {{ policy.insuranceCompany }}</p>
+            <p><strong>TPA: </strong> {{ policy.policyType }}</p>
+            <p><strong>Policy Period: </strong> {{ policy.startDate | date:'dd-MM-yyyy' }} To {{ policy.endDate |
+              date:'dd-MM-yyyy' }}</p>
+            <div class="family-details">
+              <p>Family Details</p>
+              <p>Documents</p>
+              <p>Claims</p>
+              <p>Ecard</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pristyncare">
+      <div class="content">
+        <h2>Pristyncare</h2>
+        <p>India's Surgical Expert</p>
+      </div>
+      <div class="image">
+        <img src="/assets/care.png" alt="care">
+      </div>
+    </div>
+     
+  </section>
+
+
+</main>
+<aside>
+  <div class="help-center">
+    <h2>Help Center</h2>
+    <div class="manager">
+      <h3>Kajapathy -Accountant</h3>
+      <h3>Manager</h3>
+      <h5><i class="fa fa-address-book" aria-hidden="true"></i> 7894561230</h5>
+      <h6><i class="fa fa-envelope" aria-hidden="true"></i> kajapathy&#64;futurisk.in</h6>
+    </div>
+    <h3>Tollfree Helpline</h3>
+    <h5><i class="fa fa-address-book" aria-hidden="true"></i> 1800-1034-569</h5>
+    <h6><i class="fa fa-envelope" aria-hidden="true"></i> servicehelpdesk&#64;futurisk.in</h6>
+  </div>
+</aside>
+
+
+<footer>
+  <p>&copy; Futurisk Plus 2024</p>
+  <div class="social-media">
+    <a href="/user"><img src="/assets/facebook.jpeg" alt="facebook"></a>
+    <a href="/user"><img src="/assets/insta.jpeg" alt="insta"></a>
+    <a href="/user"><img src="/assets/linkedin.png" alt="linkedin"></a>
+    <a href="/user"><img src="/assets/twitter.png" alt="twitter"></a>
+    <a href="/user"><img src="/assets/youtube.png" alt="youtube"></a>
+  </div>
+</footer>

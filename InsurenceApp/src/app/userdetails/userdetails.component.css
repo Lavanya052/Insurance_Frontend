@@ -1,0 +1,202 @@
+header {
+  background: linear-gradient(130deg, #1740b9, #34c4c4);
+  height: 200px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  outline: none;
+}
+
+.header-container {
+  width: 90%; 
+  margin: 0 auto; 
+  background-color: #ffffff; 
+  padding: 15px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+  display: flex;
+  align-items: center; 
+}
+
+.logo {
+  width: 250px; 
+  margin-right: 20px; 
+}
+
+
+.header-container ul {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+
+.header-container li {
+  margin-bottom: 10px; 
+  margin-left: 20px;
+  margin-top: 20px;
+  color: red;
+  font-size: larger;
+}
+
+.header-container p {
+  margin: 5px 0; 
+  color: black;
+}
+
+.policy-details{
+margin: 30px;
+margin-bottom: 20px;
+}
+
+.policy-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  width: 110%; 
+  border-radius: 10px;
+  flex:8;
+}
+
+.family-details {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  
+}
+
+.family-details p {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  border: 1px dashed rgb(102, 163, 196);
+  background-color: rgb(203, 226, 238);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color:#1740b9;
+  font-weight: bold;
+}
+
+
+.help-center  {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+main, aside {
+  height: calc(120vh - 200px); 
+}
+
+main {
+  float: left;
+  display: flex; 
+  margin-left: 30px;
+  justify-content: space-between;  
+}
+
+aside {
+  width: 25%; 
+  float: right;
+  padding: 20px;
+  background-color: #fff;
+  margin:  50px;
+  border-radius: 10px;
+  height: 500px;
+  flex:2
+
+}
+
+
+footer {
+  clear: both;
+}
+
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 25px; 
+  height: 25px;
+  border-radius: 5px;
+}
+
+.pristyncare {
+  margin-top: 20px;
+  padding: 20px; 
+  border: 1px solid white; 
+  border-radius: 10px; 
+  background-color: #fff; 
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.pristyncare h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.content {
+  flex: 1;
+}
+
+.image img {
+  width: 50px; 
+  height: auto; 
+}
+
+.image {
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.manager {
+  padding: 20px;
+  margin-top:40px;
+  margin-bottom:40px;
+  border-radius: 10px;
+  border: 1px dashed rgb(102, 163, 196);
+  background-color: rgb(203, 226, 238);
+}
+
+.manager h3 {
+  color: #333; 
+}
+
+.manager h5,
+.manager h6 {
+  color: #666; 
+}
+
+.manager h5 i,
+.manager h6 i {
+  margin-right: 5px;
+}
+
+.container {
+  display: flex;
+}
